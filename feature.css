@@ -1,0 +1,35 @@
+.container-feature{
+    width:89%;
+    height:auto;
+    padding: 0 5% 0;
+    text-align: center;
+}
+
+.title-feature .small-title{
+    font-size:15px;
+    color:rgb(100,123,156);
+}
+
+.title-feature .big-title{
+    font-size:30px;
+    color:rgb(45,57,84);
+    font-weight: 600;
+}
+
+.content-feature{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    height: 500px;
+}
+
+.container-feature .item-feature-1,.item-feature-2,.item-feature-3{
+    background-color: #EEE;
+}
+
+.item-feature-1 .content-feature-1{
+    background-color: yellow;
+    width:90%;
+    height:200px;
+    margin: 10% 0% 0% 5%;
+}
