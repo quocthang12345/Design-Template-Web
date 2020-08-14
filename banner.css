@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+.img-banner{
+    width:100%;
+    height: 300px;
+    background-image: url(/banner.jpg);
+    display: block;
+    padding: 150px 0px 60px 180px;
+}
+
+.img-banner .container{
+    z-index: 1;
+    width:30%;
+    height:280px;
+    background-color: white;
+    border-radius: 2%;
+    display: flex; 
+    font-family : 'Playfair Display', serif;
+    color:rgb(36,47,101);
+    font-weight: 600;
+    border: 0.25px solid #EEE;
+}
+
+.container .text-description{
+    font-size: 16px;
+    color:rgb(100,123,156);
+    font-weight: 200;
+}
+
+.container .content{
+    margin: 5px 0px 0px 15px;
+}
+
+.container .input-search{
+    width:90%;
+    height:50px;
+    border: 0.5px solid #DDD;
+    padding-left: 10px;
+}
