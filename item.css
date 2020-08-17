@@ -170,3 +170,7 @@
     float: left;
 }
 
+.img-item > img{
+    margin:15px;
+}
+
