@@ -47,6 +47,12 @@
     border-radius: 3%;
 }
 
+.item:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.075);
+    transition: all 0.5s;
+    transform: scale(1.0005);
+}
+
 
 .item .img-item{
     width:65px;
