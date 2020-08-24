@@ -5,29 +5,27 @@
 }
 
 .cooperator{
-    /*background:#EEE;*/
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 200px 0px;
 }
 
 .cooperator .content-footer{
-    display:flex;
-    flex-direction: column;
+    display:block;
 
 }
 
-.content-footer > h3,h1,h2{
+.content-footer > h5,h1,h2{
     color:white;
     font-weight: 400;
     line-height: 20px;
     
 }
 
-.container-footer > ul{
+.container-footer ul{
     list-style: none;
+    padding:0;
 }
 
 .content-footer .content{
@@ -48,15 +46,13 @@
 }
 
 .signature .sign{
-    margin-left:200px;
     color:rgb(133,139,159);
     font-size: 14px;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 40px;
 }
 
 .signature .social-network{
-    margin-right: 200px;
     color:rgb(133,139,159);
 }
 
@@ -70,13 +66,15 @@
     justify-content: center;
     align-items: center;
     border: 0.2px solid #353d56;
-    padding: 0px 100px 0px 20px;
+    /* padding: 0px 100px 0px 20px; */
+    padding : 8px 40px;
     margin-bottom: 20px;
     border-radius: 5px;
+    margin: 0 0 10px;
 }
 
 .btn .icon-footer{
-    margin: 0 10px 0;
+    margin: 0 10px 0 0;
 }
 
 .content-link > h4{
@@ -84,7 +82,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
-    margin-top:20px;
+    margin-top:10px;
     margin-bottom:3px;
 }
 

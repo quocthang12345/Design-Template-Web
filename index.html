@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="/css/menu.css" rel="stylesheet" type="text/css" />
     <link href="/css/banner.css" rel="stylesheet" type="text/css" />
@@ -16,95 +17,112 @@
     <link href="/css/footer.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div class="container">
-        <header>
-
-            <!-- This is a start of the Menu Page -->
-            <div class="section-menu">
-                <div class="menu-header">
-                    <div class="menu-left">
-                        <ul class="menu">
-                            <li><a href="#">Home</a></li>
-                            <li class="has-subMenu"><a href="#">Courses</a>
-                                <ul class="sub-menu">
-                                    <li>Language Progamming</li>
-                                    <li>Data Structure</li>
-                                    <li>Data Scientist</li>
+        <!-- This is a start of the Menu Page -->
+        <header class="fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="menu-header d-flex flex-row justify-content-start">
+                        <div class="col-6 col-md-8 col-lg-8 col-sm-6">
+                            <div class="menu-left">
+                                <ul class="menu pt-3 pb-2">
+                                    <li><a href="#">Home</a></li>
+                                    <li class="has-subMenu"><a href="#">Courses</a>
+                                        <ul class="sub-menu">
+                                            <li>Language Progamming</li>
+                                            <li>Data Structure</li>
+                                            <li>Data Scientist</li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Pages</a></li>
+                                    <li><a href="#">Contact</a></li>
                                 </ul>
-                            </li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-3 col-sm-6">
+                            <div class="menu-right float-right">
+                                <ul class="menu-btn pt-3">
+                                    <li><a href="#" class="btn-register mr-3">Sign in</a></li>
+                                    <li><a href="#" class="btn-login">Sign up</a></li>   
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="menu-right">
-                        <ul class="menu-btn">
-                            <li><a href="#" class="btn-register">Sign in</a></li>
-                            <li><a href="#" class="btn-login">Sign up</a></li>   
-                        </ul>
                     </div>
-                </div>
+                 </div>
             </div>
-            <!-- End Menu Page -->
-
         </header>
-        <section>
+        <!-- End Menu Page -->
 
             <!-- This is a start of the Banner Page -->
-            <div class="img-banner">
-                <div class="container">
-                    <div class="content">
-                        <h1>
-                           <br><p style="font-size:25px;font-weight:600;color:rgb(218,11,78);margin:0">Start Learning Daily
-                            New Thing</p></h1>
-                      <p class="text-description">Study any topic, anytime. Choose from thousands of expert-led courses now.</p>
-                    <input class="input-search" type="text" name="search" placeholder="What do you want to learn?" >
-                    </div>            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="img-banner col-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="content-banner col-12 col-lg-4 col-md-4 col-sm-12 pb-4">
+                            <div class="content">
+                                <h1>
+                                <br><p style="font-size:25px;font-weight:600;color:rgb(218,11,78);margin:0">Start Learning Daily
+                                    New Thing</p></h1>
+                            <p class="text-description">Study any topic, anytime. Choose from thousands of expert-led courses now.</p>
+                            <input class="input-search" type="text" name="search" placeholder="What do you want to learn?" >
+                            </div>            
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="content-course">
-                    <div class="content-left">
-                        <div class="description">
-                            <div class="icon-course">
-                                <div class="icon-cmr">
-                                    <i class="fas fa-video"></i>
-                                </div>
+                <div class="row">
+                    <div class="content-course d-flex flex-row">
+                            <div class="content-left col-4 col-lg-4 col-md-4 col-sm-4">
+                                    <div class="description">
+                                        <div class="row">
+                                            <div class="icon-course col-12 col-sm-12 col-md-3 col-lg-3">
+                                                <div class="icon-cmr">
+                                                    <i class="fas fa-video"></i>
+                                                </div>
+                                            </div>
+                                            <div class="short-description col-12 col-sm-12 col-md-9 col-lg-9">
+                                                <p class="title-course">100,000 Online Courses</p>
+                                                <p>Nor again is there anyone who loves or pursues or desires</p>
+                                            </div>
+                                        </div>
+                                    </div>
                             </div>
-                            <div class="short-description">
-                                <p class="title-course">100,000 Online Courses</p>
-                                <p>Nor again is there anyone who loves or pursues or desires</p>
+                            <div class="content-center col-4 col-lg-4 col-md-4 col-sm-4">
+                                    <div class="description">
+                                        <div class="row">
+                                            <div class="icon-course col-12 col-sm-12 col-md-3 col-lg-3">
+                                                <div class="icon-cmr">
+                                                    <i class="fas fa-medal"></i>
+                                                </div>
+                                            </div>
+                                            <div class="p-0 pr-4 short-description col-12 col-sm-12 col-md-9 col-lg-9">
+                                                <p class="title-course">Expert Instruction</p>
+                                                <p>Nam libero tempore, cum soluta and nobis est eligendi optio</p>
+                                            </div>
+                                        </div>
+                                    </div>
                             </div>
-                        </div>
+                            <div class="content-right col-4 col-lg-4 col-md-4 col-sm-4">
+                                    <div class="description">
+                                        <div class="row">
+                                            <div class="icon-course col-12 col-sm-12 col-md-3 col-lg-3">
+                                                <div class="icon-cmr">
+                                                    <i class="fas fa-infinity"></i>
+                                                </div>
+                                            </div>
+                                            <div class="short-description col-12 col-sm-12 col-md-9 col-lg-9">
+                                                <p class="title-course">Lifetime Access</p>
+                                                <p>These cases are perfectly simple and easy to distinguish</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
                     </div>
-                    <div class="content-center">
-                        <div class="description">
-                            <div class="icon-course">
-                                <div class="icon-cmr">
-                                    <i class="fas fa-medal"></i>
-                                </div>
-                            </div>
-                            <div class="short-description">
-                                <p class="title-course">Expert Instruction</p>
-                                <p>Nam libero tempore, cum soluta and nobis est eligendi optio</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-right">
-                        <div class="description">
-                            <div class="icon-course">
-                                <div class="icon-cmr">
-                                    <i class="fas fa-infinity"></i>
-                                </div>
-                            </div>
-                            <div class="short-description">
-                                <p class="title-course">Lifetime Access</p>
-                                <p>These cases are perfectly simple and easy to distinguish</p>
-                            </div>
-                        </div>
-                    </div>
+                </div>
             </div>
             <!-- End Banner Page -->
 
             <!-- This is a start of the Feature Page -->
+            <div class="container">
             <div class="section-feature">
                 <div class="container-feature">
                     <div class="title-feature">
@@ -112,10 +130,11 @@
                         <div class="big-title"><span style="color:rgb(218,11,78);">Featured</span> Courses By Professional Instructor</div>
                     </div>
                     <div class="content-feature">
-                        <div class="item-feature-1">
-                            <div class="content-feature-1">
-                                <div class="item-feature-img-1"> </div>
-                                <div class="description-feature">
+                        <div class="row">
+                        <div class="item-feature-1 col-12 col-md-4 col-lg-4 col-sm-12">
+                            <div class="card content-feature-1">
+                                <div class="card-header item-feature-img-1"> </div>
+                                <div class="card-body description-feature">
                                     <div class="wrap-feature">
                                         <div class="title"><h4>
                                             The Complete Financial Analyst Course 2020
@@ -136,7 +155,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="author">
+                                <div class="card-footer author">
                                     <div class="name-author">
                                         <div class="img"></div>
                                         <p>Shaurya Preet</p>
@@ -148,10 +167,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item-feature-2">
-                            <div class="content-feature-2">
-                                <div class="item-feature-img-2"></div>
-                                <div class="description-feature-2">
+                        <div class="item-feature-2 col-12 col-md-4 col-lg-4 col-sm-12">
+                            <div class="card content-feature-2">
+                                <div class="card-header item-feature-img-2"></div>
+                                <div class="card-body description-feature-2">
                                     <div class="wrap-feature">
                                         <div class="title"><h4>
                                             The Complete Business Plan Course (Includes 50 Templates)
@@ -172,7 +191,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="author">
+                                <div class="card-footer author">
                                     <div class="name-author">
                                         <div class="img-1"></div>
                                         <p>Savitha Tripathi</p>
@@ -184,10 +203,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item-feature-3">
-                            <div class="content-feature-3">
-                                <div class="item-feature-img-3"></div>
-                                <div class="description-feature-3">
+                        <div class="item-feature-3 col-12 col-md-4 col-lg-4 col-sm-12">
+                            <div class="card content-feature-3">
+                                <div class="card-header item-feature-img-3"></div>
+                                <div class="card-body description-feature-3">
                                     <div class="wrap-feature">
                                         <div class="title"><h4>
                                             An Entire MBA In 1 Course:Award Winning Business School Prof
@@ -208,7 +227,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="author">
+                                <div class="card-footer author">
                                     <div class="name-author">
                                         <div class="img-2"></div>
                                         <p>Litha Maildick</p>
@@ -220,12 +239,16 @@
                                 </div>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            </div>
             <!-- End Feature Page -->
 
+
             <!-- This is a start of the Item Page -->
+            <div class="container-fluid">
             <div class="container-item">
                 <div class="wrap-item">
                     <div class="title-item">
@@ -233,7 +256,8 @@
                         <div class="big-title"><span style="color:rgb(218, 11, 78)"> Hot & Popular</span> Category For Learn</div>
                     </div>
                     <div class="content-item">
-                        <div class="item i-1">
+                        <div class="row d-flex flex-row justify-content-center align-items-center">
+                        <div class="item i-1 col-12 col-sm-12 col-lg-3 col-md-3">
                             <ul>
                                 <li class="img-item item-img-1"><img src="/icon/monitor.png"></li>
                                 <li class="content">
@@ -241,7 +265,7 @@
                                     <p class="class"><i class="fas fa-school"></i> 23 Classes</p></li>
                             </ul>
                         </div>
-                        <div class="item i-2">
+                        <div class="item i-2 col-12 col-sm-12 col-lg-3 col-md-3">
                             <ul>
                                 <li class="img-item item-img-2"><img src="/icon/briefcase.png"></li>
                                 <li class="content">
@@ -250,7 +274,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="item i-3">
+                        <div class="item i-3 col-12 col-sm-12 col-lg-3 col-md-3">
                             <ul>
                                 <li class="img-item item-img-3"><img src="/icon/growth.png"></li>
                                 <li class="content">
@@ -259,7 +283,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="item i-4">
+                        <div class="item i-4 col-12 col-sm-12 col-lg-3 col-md-3">
                             <ul>
                                 <li class="img-item item-img-4"><img src="/icon/python.png"></li>
                                 <li class="content">
@@ -268,7 +292,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="item i-5">
+                        <div class="item i-5 col-12 col-sm-12 col-lg-3 col-md-3">
                             <ul>
                                 <li class="img-item item-img-5"><img src="/icon/design.png"></li>
                                 <li class="content">
@@ -277,7 +301,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="item i-6">
+                        <div class="item i-6 col-12 col-sm-12 col-lg-3 col-md-3">
                             <ul>
                                 <li class="img-item item-img-6"><img src="/icon/speaker.png"></li>
                                 <li class="content">
@@ -286,7 +310,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="item i-7">
+                        <div class="item i-7 col-12 col-sm-12 col-lg-3 col-md-3">
                             <ul>
                                 <li class="img-item item-img-7"><img src="/icon/sketch.png"></li>
                                 <li class="content">
@@ -295,7 +319,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="item i-8">
+                        <div class="item i-8 col-12 col-sm-12 col-lg-3 col-md-3">
                             <ul>
                                 <li class="img-item item-img-8"><img src="/icon/meditation.png"></li>
                                 <li class="content">
@@ -304,7 +328,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="item i-9">
+                        <div class="item i-9 col-12 col-sm-12 col-lg-3 col-md-3">
                             <ul>
                                 <li class="img-item item-img-9"><img src="/icon/health.png"></li>
                                 <li class="content">
@@ -314,18 +338,23 @@
                             </ul>
                         </div>
                     </div>
+                    </div>
                 </div>
+            </div>
             </div>
             <!-- End Item Page -->
 
             <!-- This is a start of the Info Page -->
+            <div class="container-fluid">
             <div class="section-info">
                 <div class="container-info">
+                    <div class="row align-items-center">
                     <div class="info">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-row justify-content-end pr-5">
                         <div class="info-left">
                             <div class="info-item">
                                 <h2 class="info-title">Know About <span style="color:rgb(218,11,78);">E-Learn</span> Learning Platform</h2>
-                                <div class="block-item">
+                                <div class="block-item ">
                                     <div class="img-info-1"><img src="/icon/screen.png"/></div>
                                     <div class="info-content">
                                         <h4>Nemo Enim Ipsam Voluptatem Quia.</h4>
@@ -349,27 +378,35 @@
                             </div>
                             <a href="#" class="btn-pink">Know More<span class="arrow"><i class="fas fa-arrow-right"></i></span></a>
                         </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="info-right">
                             <div class="info-img">
                             </div>
                         </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
+            </div>
             </div>
             <!-- End Info Page -->
 
             <!-- This is a start of the Course Page -->
+            <div class="background-feature">
+            <div class="container">
             <div class="section-feature">
                 <div class="container-feature">
                     <div class="title-feature">
                         <div class="small-title">New & Trending</div>
                         <div class="big-title"><span style="color:rgb(218,11,78);">Featured</span> Courses By Professional Instructor</div>
                     </div>
-                    <div class="content-feature">
-                        <div class="item-feature-1">
-                            <div class="content-feature-1">
-                                <div class="item-course item-course-img-1"><span class="cost">$199</span></div>
-                                <div class="description-feature">
+                    <div class="content-feature mt-2">
+                        <div class="row">
+                        <div class="item-feature-1 col-12 col-md-4 col-lg-4 col-sm-12">
+                            <div class="card content-feature-1">
+                                <div class="card-header item-course item-course-img-1"><span class="cost">$199</span></div>
+                                <div class="card-body description-feature">
                                     <div class="wrap-feature">
                                         <div class="title"><h4>
                                             An Entire MBA in 1 Course:Award Winning Business School Prof
@@ -381,7 +418,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="author">
+                                <div class="card-footer author">
                                     <div class="name-author">
                                         <div class="img"></div>
                                         <p>Shaurya Preet</p>
@@ -393,10 +430,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item-feature-2">
-                            <div class="content-feature-2">
-                                <div class="item-course item-course-img-2"><span class="cost">$99</span></div>
-                                <div class="description-feature-2">
+                        <div class="item-feature-2 col-12 col-md-4 col-lg-4 col-sm-12">
+                            <div class="card content-feature-2">
+                                <div class="card-header item-course item-course-img-2"><span class="cost">$99</span></div>
+                                <div class="card-body description-feature-2">
                                     <div class="wrap-feature">
                                         <div class="title"><h4>
                                             PMP Exam Prep Seminar - PMBOK Guide 6
@@ -408,7 +445,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="author">
+                                <div class="card-footer author">
                                     <div class="name-author">
                                         <div class="img-1"></div>
                                         <p>Savitha Tripathi</p>
@@ -420,10 +457,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item-feature-3">
-                            <div class="content-feature-3">
-                                <div class="item-course item-course-img-3"><span class="cost">$79</span></div>
-                                <div class="description-feature-3">
+                        <div class="item-feature-3 col-12 col-md-4 col-lg-4 col-sm-12">
+                            <div class="card content-feature-3">
+                                <div class="card-header item-course item-course-img-3"><span class="cost">$79</span></div>
+                                <div class="card-body description-feature-3">
                                     <div class="wrap-feature">
                                         <div class="title"><h4>
                                             The Complete Business Plan Course (Includes 50 Templates)
@@ -435,7 +472,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="author">
+                                <div class="card-footer author">
                                     <div class="name-author">
                                         <div class="img-2"></div>
                                         <p>Litha Maildick</p>
@@ -447,8 +484,11 @@
                                 </div>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            </div>
             </div>
             <!-- End Course Page -->
 
@@ -474,105 +514,117 @@
 
 
             <!-- This is a start of the Email Page -->
-            <div class="section-email">
-                <div class="email">
-                    <div class="email-title">Join Thousand Of Happy Students!</div>
-                    <div class="subscribe">Subscribe our newsletter & get latest news and updation!</div>
-                    <form class="input">
-                        <input type="text" class="email-text" placeholder="Your Email Address"/>
-                        <input type="submit" class="submit-email" value="Get Started" />
-                    </form>    
-                </div>
-            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-12 col-sm-12 col-md-12" style="padding:0;">
+                        <div class="section-email">
+                            <div class="email">
+                                <div class="email-title">Join Thousand Of Happy Students!</div>
+                                <div class="subscribe">Subscribe our newsletter & get latest news and updation!</div>
+                                <form class="input">
+                                    <input type="text" class="email-text" placeholder="Your Email Address"/>
+                                    <input type="submit" class="submit-email" value="Get Started" />
+                                </form>    
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+            </div>  
             <!-- End Email Page -->
 
 
-        </section>
-        <footer>
+
             <!-- This is a start Footer Page -->
             <div class="footer">
                 <div class="container-footer">
-                    <div class="cooperator">
-                        <div class="content-footer producer">
-                            <h1 class="title">LearnUp</h1>
-                            <div class="content">
-                                <p>4967 Sardis Sta, Victoria 8007, Montreal.</p>
-                                <p>+1 246-345-0695</p>
-                                <p>info@learnup.com</p>
-                            </div>
-                        </div>
-                        <div class="content-footer navi">
-                            <h3 class="title">Navigations</h3>
-                            <div class="content replace">
-                                <ul>
-                                    <p><a>About Us</a></p>
-                                    <p><a>FAQs Page</a></p>
-                                    <p><a>Checkout</a></p>
-                                    <p><a>Contact</a></p>
-                                    <p><a>Blog</a></p>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="content-footer category">
-                            <h3 class="title">New Categories</h3>
-                            <div class="content">
-                                <ul>
-                                    <p><a>Designing</a></p>
-                                    <p><a>Business</a></p>
-                                    <p><a>Software</a></p>
-                                    <p><a>WordPress</a></p>
-                                    <p><a>Java</a></p>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="content-footer help">
-                            <h3 class="title">Help & Support</h3>
-                            <div class="content">
-                                <ul>
-                                    <p><a>documentation</a></p>
-                                    <p><a>Live Chat</a></p>
-                                    <p><a>Mail Us</a></p>
-                                    <p><a>Privacy</a></p>
-                                    <p><a>Faqs</a></p>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="content-footer link-app">
-                            <h2 class="title">Download Apps</h2>
-                            <a href="#">
-                                <div class="btn">
-                                    <i class="icon-footer fab fa-google-play" style="color:rgb(218,11,78);font-size: 30px;"></i>
-                                    <div class="content-link">
-                                        <h4>Google Play</h4>
-                                        <p>Get It Now</p>   
-                                    </div>
+                    <div class="container">
+                        <div class="row">
+                        <div class="cooperator col-12 col-md-3 col-lg-3 col-sm-12">
+                            <div class="content-footer producer">
+                                <h1 class="title">LearnUp</h1>
+                                <div class="content">
+                                    <p>4967 Sardis Sta, Victoria 8007, Montreal.</p>
+                                    <p>+1 246-345-0695</p>
+                                    <p>info@learnup.com</p>
                                 </div>
-                            </a>
-                            <a href="#">
-                                <div class="btn">
-                                    <i class="icon-footer fab fa-apple" style="color:rgb(218,11,78);font-size: 30px;"></i>
-                                    <div class="content-link">
-                                        <h4>App Store</h4>
-                                        <p>Now It Availible</p>   
-                                    </div>
-                                </div>
-                            </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="signature">
-                        <div class="sign">© 2020 LearnUp. Designd By Themezhub.</div>
-                        <div class="social-network">
-                            <a href="#"><i class="fab fa-facebook-f" style="color:rgb(133,139,159);"></i></a>
-                            <a href="#"><i class="fab fa-twitter" style="color:rgb(133,139,159);margin:0 20px 0;"></i></a>
-                            <a href="#"><i class="fab fa-instagram" style="color:rgb(133,139,159);margin:0 20px 0 0;"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in" style="color:rgb(133,139,159);"></i></a>
+                        <div class="content-footer navi col-12 col-md-2 col-lg-2 col-sm-12">
+                                <h5 class="title">Navigations</h5>
+                                <div class="content replace">
+                                    <ul>
+                                        <p><a>About Us</a></p>
+                                        <p><a>FAQs Page</a></p>
+                                        <p><a>Checkout</a></p>
+                                        <p><a>Contact</a></p>
+                                        <p><a>Blog</a></p>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div class="content-footer category col-12 col-md-2 col-lg-2 col-sm-12">
+                                <h5 class="title">New Categories</h5>
+                                <div class="content">
+                                    <ul>
+                                        <p><a>Designing</a></p>
+                                        <p><a>Business</a></p>
+                                        <p><a>Software</a></p>
+                                        <p><a>WordPress</a></p>
+                                        <p><a>Java</a></p>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div class="content-footer help col-12 col-md-2 col-lg-2 col-sm-12">
+                                <h5 class="title">Help & Support</h5>
+                                <div class="content">
+                                    <ul>
+                                        <p><a>documentation</a></p>
+                                        <p><a>Live Chat</a></p>
+                                        <p><a>Mail Us</a></p>
+                                        <p><a>Privacy</a></p>
+                                        <p><a>Faqs</a></p>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div class="content-footer link-app col-12 col-md-3 col-lg-3 col-sm-12">
+                                <h5 class="title">Download Apps</h5>
+                                <a href="#" style="text-decoration:none;">
+                                    <div class="btn">
+                                        <i class="icon-footer fab fa-google-play" style="color:rgb(218,11,78);font-size: 30px;"></i>
+                                        <div class="content-link">
+                                            <h4>Google Play</h4>
+                                            <p>Get It Now</p>   
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" style="text-decoration:none;">
+                                    <div class="btn">
+                                        <i class="icon-footer fab fa-apple" style="color:rgb(218,11,78);font-size: 30px;"></i>
+                                        <div class="content-link">
+                                            <h4>App Store</h4>
+                                            <p>Now It Availible</p>   
+                                        </div>
+                                    </div>
+                                </a>
                         </div>
                     </div>
                 </div>
+    
+                    <div class="signature p-3 d-flex flex-row justify-content-around align-items-center">
+                        <div class="sign">© 2020 LearnUp. Designd By Themezhub.</div>
+                            <div class="social-network">
+                                <a href="#"><i class="fab fa-facebook-f" style="color:rgb(133,139,159);"></i></a>
+                                <a href="#"><i class="fab fa-twitter" style="color:rgb(133,139,159);margin:0 20px 0;"></i></a>
+                                <a href="#"><i class="fab fa-instagram" style="color:rgb(133,139,159);margin:0 20px 0 0;"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in" style="color:rgb(133,139,159);"></i></a>
+                            </div>
+                        </div>
+                    </div>
             </div>
             <!-- End Footer Page -->
-        </footer>
-    </div>
-    
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>        
 </body>
 </html>

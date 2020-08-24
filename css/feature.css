@@ -5,9 +5,8 @@
     height: auto;
 }
 .container-feature{
-    width:89%;
-    height:auto;
-    padding: 0 5% 0;
+    height: auto;
+    padding: 0px;
     text-align: center;
 }
 
@@ -23,16 +22,14 @@
 }
 
 .content-feature{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 550px;
+    height: auto;
 }
 
 
 .content-feature .content-feature-1{
-    width:75%;
+    width:80%;
     height:450px;
-    margin: 7% 0% 0% 20%;
+    margin: 7% 0% 0% 10%;
     border-radius:2%;
     border:1px solid #e8ebf1;
 }
@@ -43,7 +40,7 @@
 }
 
 .content-feature .content-feature-2{
-    width:75%;
+    width:80%;
     height:450px;
     margin: 7% 0% 0% 10%;
     border-radius:2%;
@@ -56,9 +53,9 @@
 }
 
 .content-feature .content-feature-3{
-    width:75%;
+    width:80%;
     height:450px;
-    margin: 7% 0% 0% 0%;
+    margin: 7% 0% 0% 10%;
     border-radius:2%;
     border:1px solid #e8ebf1;
 }
@@ -73,7 +70,7 @@
 .content-feature-1 .item-feature-img-1{
     width: 100%;
     height: 50%;
-    background: url(/img/img-feature1.jpg) no-repeat;
+    background: url(/image/img-feature1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -81,7 +78,7 @@
 .content-feature-2 .item-feature-img-2{
     width: 100%;
     height: 50%;
-    background: url(/img/img-feature2.jpg) no-repeat;
+    background: url(/image/img-feature2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -89,14 +86,14 @@
 .content-feature-3 .item-feature-img-3{
     width: 100%;
     height: 50%;
-    background: url(/img/img-feature.jpg) no-repeat;
+    background: url(/image/img-feature.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .content-feature-1 .description-feature{
     background-color:white;
-    width: 88%;
+    width: 100%;
     height:35%;
     padding: 6%;
     border-bottom: 1px solid #DDD;
@@ -104,7 +101,7 @@
 
 .content-feature-2 .description-feature-2{
     background-color:white;
-    width: 88%;
+    width: 100%;
     height:35%;
     padding: 6%;
     border-bottom: 1px solid #DDD;
@@ -112,7 +109,7 @@
 
 .content-feature-3 .description-feature-3{
     background-color:white;
-    width: 88%;
+    width: 100%;
     height:35%;
     padding: 6%;
     border-bottom: 1px solid #DDD;
@@ -132,6 +129,7 @@
     flex-direction: row;
     justify-content: space-around;
     padding:0px;
+    margin-top:10px;
 }
 
 .temp .label1,.label2,.label3{
@@ -180,7 +178,7 @@
 .detail-feature .price{
     float:right;
     font-size: 25px;
-    margin:20px 0;
+    margin:0;
     line-height: 30px;
     font-weight: 600;
     color:rgb(45,57,84);
@@ -249,15 +247,15 @@
 }
 
 .author .img{
-    background-image: url(/img/img-author.jpg) ;
+    background-image: url(/image/img-author.jpg) ;
 }
 
 .author .img-1{
-    background-image: url(/img/img-author1.jpg) ;
+    background-image: url(/image/img-author1.jpg) ;
 }
 
 .author .img-2{
-    background-image: url(/img/img-author2.jpg) ;
+    background-image: url(/image/img-author2.jpg) ;
 }
 
 
